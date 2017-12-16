@@ -1,0 +1,13 @@
+new virtual env:
+conda create -p <venv_dir_path> python=3.6
+
+exporting env file:
+activate <venv_dir_path>
+conda env export > <project_path>/environment.yml
+adding environment.yml to git
+
+
+restoring venv from file:
+conda env create -f .../environment.yml -p <venv_dir_path>
+
+
